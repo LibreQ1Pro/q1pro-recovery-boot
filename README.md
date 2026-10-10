@@ -80,8 +80,8 @@ sudo sh q1pro-recovery-boot.sh uninstall
 
 ![USB ports](images/mainboard-usb.jpg)
 
-Booting from the flash drive takes a minute or two: the stock bootloader reads
-USB slowly. Without a flash drive the boot takes as long as before.
+Booting from the flash drive takes about a minute. Without a flash drive the
+boot takes as long as before.
 
 ## LED signals
 
@@ -154,8 +154,7 @@ The stock bootloader is U-Boot 2021.07 from QIDI's Armbian build. The script:
 3. looks for a system on the flash drive and boots it;
 4. otherwise boots the eMMC with `extlinux/extlinux-emmc.conf`.
 
-The USB 3.0 port is on a USB controller this U-Boot has no driver for. The hub
-runs at USB 1.1 speed in this U-Boot, so the flash drive boot is slow.
+The USB 3.0 port is on a USB controller this U-Boot has no driver for.
 
 ### Disclaimer
 
