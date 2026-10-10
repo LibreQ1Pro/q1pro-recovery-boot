@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="670" viewBox="0 0 960 670">
+<title>QIDI Q1 Pro: U-Boot LED signals</title>
+<style>text{font-family:DejaVu Sans,Verdana,sans-serif;fill:#e6edf3}.title{font-size:20px;font-weight:bold}.led{font-size:13px;text-anchor:middle;fill:#8b949e}.phase{font-size:20px;text-anchor:middle}.err{fill:#ff7b72}.pnote{font-size:13px;text-anchor:middle;fill:#8b949e}.tick{font-size:13px;fill:#8b949e;text-anchor:middle}.note{font-size:13px;fill:#8b949e;font-style:italic}</style>
+<defs>
+<radialGradient id="glow-yellow"><stop offset="0" stop-color="#ffc61a" stop-opacity="0.9"/><stop offset="1" stop-color="#ffc61a" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow-green"><stop offset="0" stop-color="#2ee86a" stop-opacity="0.9"/><stop offset="1" stop-color="#2ee86a" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow-blue"><stop offset="0" stop-color="#3d8bff" stop-opacity="0.9"/><stop offset="1" stop-color="#3d8bff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="960" height="670" fill="#0d1117"/>
+<g transform="translate(30 30)">
+<rect width="440" height="230" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="20" y="34" class="title">eMMC OK</text>
+<rect x="70" y="58" width="300" height="100" rx="8" fill="#0f2a1c" stroke="#1d4d33"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#4a3a10"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.18000;0.19333;0.33333;0.34667;0.36000;0.37333;0.38667;0.40000;0.54667;0.56667;0.57200;0.58533;0.59067;0.64000;0.64533;0.65867;0.66400;0.71333;0.71867;0.73200;0.73733;0.78667;0.79200;0.80533;0.81067;0.86000;0.86533;0.87867;0.88400;0.93333;0.93867;0.95200;0.95733" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="130" cy="100" r="30" fill="url(#glow-yellow)"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#ffc61a"/>
+</g>
+<text x="130" y="146" class="led">Yellow</text>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#123a20"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.17333;0.18667;0.33333;0.41333;0.54667" values="0;1;0;1;0;1"/>
+<circle cx="220" cy="100" r="30" fill="url(#glow-green)"/>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#2ee86a"/>
+</g>
+<text x="220" y="146" class="led">Green</text>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#14264a"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.17333;0.18667;0.33333;0.41333;0.54667;0.55667;0.56085;0.58804;0.59203;0.65068;0.65360;0.72044;0.72473;0.73149;0.73601;0.74010;0.74490;0.77318;0.77593;0.77873;0.78284;0.82879;0.83404;0.88714;0.89231;0.89793;0.90151;0.90779;0.91249" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="310" cy="100" r="30" fill="url(#glow-blue)"/>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#3d8bff"/>
+</g>
+<text x="310" y="146" class="led">Blue</text>
+<text x="220" y="196" class="phase" opacity="0">Off
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000" values="1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Power on
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000;0.17333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">U-Boot is up
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.17333;0.33333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Booting eMMC
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.33333;0.54667" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Linux
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.54667;1.00000" values="0;1;0"/>
+</text>
+<text x="220" y="218" class="pnote" opacity="0">LEDs depend on the distro: may stay blue + yellow
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.54667;1.00000" values="0;1;0"/>
+</text>
+</g>
+<g transform="translate(490 30)">
+<rect width="440" height="230" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="20" y="34" class="title">USB OK</text>
+<rect x="70" y="58" width="300" height="100" rx="8" fill="#0f2a1c" stroke="#1d4d33"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#4a3a10"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.18000;0.19333;0.34667;0.36000;0.37333;0.38667;0.40000;0.41333;0.54667;0.56667;0.57200;0.58533;0.59067;0.64000;0.64533;0.65867;0.66400;0.71333;0.71867;0.73200;0.73733;0.78667;0.79200;0.80533;0.81067;0.86000;0.86533;0.87867;0.88400;0.93333;0.93867;0.95200;0.95733" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="130" cy="100" r="30" fill="url(#glow-yellow)"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#ffc61a"/>
+</g>
+<text x="130" y="146" class="led">Yellow</text>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#123a20"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.17333;0.18667;0.54667" values="0;1;0;1"/>
+<circle cx="220" cy="100" r="30" fill="url(#glow-green)"/>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#2ee86a"/>
+</g>
+<text x="220" y="146" class="led">Green</text>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#14264a"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.17333;0.18667;0.54667;0.55667;0.55958;0.59042;0.59376;0.59755;0.60032;0.67993;0.68474;0.69200;0.69602;0.70067;0.70583;0.77891;0.78255;0.85829;0.86334;0.86881;0.87297;0.87690;0.87963;0.90844;0.91377;0.92003;0.92319" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="310" cy="100" r="30" fill="url(#glow-blue)"/>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#3d8bff"/>
+</g>
+<text x="310" y="146" class="led">Blue</text>
+<text x="220" y="196" class="phase" opacity="0">Off
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000" values="1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Power on
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000;0.17333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">U-Boot is up
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.17333;0.33333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Booting USB
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.33333;0.54667" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Linux
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.54667;1.00000" values="0;1;0"/>
+</text>
+<text x="220" y="218" class="pnote" opacity="0">LEDs depend on the distro: may stay blue + yellow
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.54667;1.00000" values="0;1;0"/>
+</text>
+</g>
+<g transform="translate(30 290)">
+<rect width="440" height="230" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="20" y="34" class="title">eMMC failed</text>
+<rect x="70" y="58" width="300" height="100" rx="8" fill="#0f2a1c" stroke="#1d4d33"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#4a3a10"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.18000;0.19333;0.33333;0.34667;0.36000;0.37333;0.38667;0.40000;0.67467" values="0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="130" cy="100" r="30" fill="url(#glow-yellow)"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#ffc61a"/>
+</g>
+<text x="130" y="146" class="led">Yellow</text>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#123a20"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.17333;0.18667;0.33333;0.41333;0.55200;0.55733;0.56267;0.56800;0.57333;0.57867;0.58400;0.58933;0.59467;0.60000;0.60533;0.61067;0.61600;0.62133;0.62667;0.63200;0.63733;0.64267;0.64800;0.65333;0.65867;0.66400;0.66933;0.67467" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="220" cy="100" r="30" fill="url(#glow-green)"/>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#2ee86a"/>
+</g>
+<text x="220" y="146" class="led">Green</text>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#14264a"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.17333;0.18667;0.33333;0.41333;0.55200;0.55733;0.56267;0.56800;0.57333;0.57867;0.58400;0.58933;0.59467;0.60000;0.60533;0.61067;0.61600;0.62133;0.62667;0.63200;0.63733;0.64267;0.64800;0.65333;0.65867;0.66400;0.66933;0.67467" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1"/>
+<circle cx="310" cy="100" r="30" fill="url(#glow-blue)"/>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#3d8bff"/>
+</g>
+<text x="310" y="146" class="led">Blue</text>
+<text x="220" y="196" class="phase" opacity="0">Off
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000" values="1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Power on
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000;0.17333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">U-Boot is up
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.17333;0.33333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Booting eMMC
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.33333;0.54667" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase err" opacity="0">Error, stays blue
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.54667;1.00000" values="0;1;0"/>
+</text>
+</g>
+<g transform="translate(490 290)">
+<rect width="440" height="230" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="20" y="34" class="title">USB failed</text>
+<rect x="70" y="58" width="300" height="100" rx="8" fill="#0f2a1c" stroke="#1d4d33"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#4a3a10"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.18000;0.19333;0.34667;0.36000;0.37333;0.38667;0.40000;0.41333;0.67467" values="0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="130" cy="100" r="30" fill="url(#glow-yellow)"/>
+<rect x="118" y="92" width="24" height="16" rx="3" fill="#ffc61a"/>
+</g>
+<text x="130" y="146" class="led">Yellow</text>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#123a20"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.17333;0.18667;0.55200;0.55733;0.56267;0.56800;0.57333;0.57867;0.58400;0.58933;0.59467;0.60000;0.60533;0.61067;0.61600;0.62133;0.62667;0.63200;0.63733;0.64267;0.64800;0.65333;0.65867;0.66400;0.66933;0.67467" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0"/>
+<circle cx="220" cy="100" r="30" fill="url(#glow-green)"/>
+<rect x="208" y="92" width="24" height="16" rx="3" fill="#2ee86a"/>
+</g>
+<text x="220" y="146" class="led">Green</text>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#14264a"/>
+<g opacity="0">
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0.00000;0.04000;0.17333;0.18667;0.55200;0.55733;0.56267;0.56800;0.57333;0.57867;0.58400;0.58933;0.59467;0.60000;0.60533;0.61067;0.61600;0.62133;0.62667;0.63200;0.63733;0.64267;0.64800;0.65333;0.65867;0.66400;0.66933;0.67467" values="0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1"/>
+<circle cx="310" cy="100" r="30" fill="url(#glow-blue)"/>
+<rect x="298" y="92" width="24" height="16" rx="3" fill="#3d8bff"/>
+</g>
+<text x="310" y="146" class="led">Blue</text>
+<text x="220" y="196" class="phase" opacity="0">Off
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000" values="1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Power on
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.04000;0.17333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">U-Boot is up
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.17333;0.33333" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase" opacity="0">Booting USB
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.33333;0.54667" values="0;1;0"/>
+</text>
+<text x="220" y="196" class="phase err" opacity="0">Error, stays blue
+<animate attributeName="opacity" calcMode="discrete" dur="15.0s" repeatCount="indefinite" keyTimes="0;0.54667;1.00000" values="0;1;0"/>
+</text>
+</g>
+<rect x="30" y="572" width="900" height="8" rx="4" fill="#30363d"/>
+<rect x="30" y="572" width="0" height="8" rx="4" fill="#58a6ff">
+<animate attributeName="width" from="0" to="900" dur="15.0s" repeatCount="indefinite"/></rect>
+<rect x="65.0" y="568" width="2" height="16" fill="#8b949e"/>
+<text x="66.0" y="604" class="tick">power</text>
+<rect x="185.0" y="568" width="2" height="16" fill="#8b949e"/>
+<text x="186.0" y="604" class="tick">ring</text>
+<rect x="329.0" y="568" width="2" height="16" fill="#8b949e"/>
+<text x="330.0" y="604" class="tick">boot device</text>
+<rect x="521.0" y="568" width="2" height="16" fill="#8b949e"/>
+<text x="522.0" y="604" class="tick">Linux / error</text>
+<text x="30" y="652" class="note">Timings are approximate: the animation only shows roughly how the signals look.</text>
+</svg>
